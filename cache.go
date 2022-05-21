@@ -56,7 +56,7 @@ func (c *Cache) Keys() (s []string) {
 			c.cache = append(c.cache[:i], c.cache[i+1:]...)
 			continue
 		}
-		s = append(s, n.value)
+		s = append(s, n.key)
 	}
 	return s
 }
